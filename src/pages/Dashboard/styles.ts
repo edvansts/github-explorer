@@ -10,8 +10,7 @@ export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
   max-width: 450px;
-
-  margin-top: 80px;
+  margin-top: 40px;
 `;
 
 export const Form = styled.form<FormProps>`
@@ -58,7 +57,7 @@ export const Form = styled.form<FormProps>`
 
 export const Repositories = styled.div`
   max-width: 700px;
-  margin-top: 80px;
+  margin-top: 50px;
 
   a {
     background: #fff;
@@ -97,8 +96,8 @@ export const Repositories = styled.div`
         margin-top: 4px;
         color: #a8a8b3;
       }
-      /* icone sempre é datado como svg */
     }
+      /* icone sempre é datado como svg */
     svg {
       margin-left: auto;
       color: #c9c9d4;

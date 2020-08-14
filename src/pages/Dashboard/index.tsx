@@ -1,6 +1,6 @@
 import React, { useState, useEffect, FormEvent } from "react";
 import { FiChevronRight } from "react-icons/fi";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import api from "./../../services/api";
 import { Title, Form, Repositories, Error } from "./styles";
@@ -68,6 +68,7 @@ const Dashboard: React.FC = () => {
       setInputError("Erro na busca por esse repositório");
     }
   }
+
   return (
     <>
       <img src={logoImg} alt="Github Explorer" />
@@ -85,7 +86,10 @@ const Dashboard: React.FC = () => {
 
       <Repositories>
         {repositories.map((repository) => (
-          <Link key={repository.full_name} to={`repository/${repository.full_name}`}>
+          <Link
+            key={repository.full_name}
+            to={`repository/${repository.full_name}`}
+          >
             <img
               src={repository.owner.avatar_url}
               alt={repository.owner.login}
